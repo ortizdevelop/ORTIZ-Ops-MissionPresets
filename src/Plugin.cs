@@ -20,10 +20,10 @@ namespace MissionPresets
         public List<Preset> presets = new List<Preset>();
     }
 
-    [BepInPlugin("ortiz.missionpresets", "ORTIZ Mission Presets", Version)]
+    [BepInPlugin("ortiz.missionpresets", "ORTIZ Ops - MissionPresets", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
         internal static ManualLogSource Log;
         internal static Plugin I;
         internal static ConfigEntry<KeyboardShortcut> ToggleKey;
@@ -63,7 +63,7 @@ namespace MissionPresets
             DontDestroyOnLoad(go);
             go.hideFlags = HideFlags.HideAndDontSave;
             go.AddComponent<PresetsUI>();
-            Log.LogInfo($"ORTIZ Mission Presets v{Version} loaded, {Store.presets.Count} presets");
+            Log.LogInfo($"ORTIZ Ops - MissionPresets v{Version} loaded, {Store.presets.Count} presets");
         }
 
         internal void Load()

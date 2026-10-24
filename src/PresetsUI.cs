@@ -56,7 +56,7 @@ namespace MissionPresets
                 if (GUI.Button(new Rect(Screen.width - 190, 60, 180, 26), "Пресеты миссии (" + Plugin.ToggleKey.Value + ")")) visible = true;
                 return;
             }
-            rect = GUILayout.Window(0x4D5053, rect, Draw, "ORTIZ Mission Presets — пресеты настроек миссии");
+            rect = GUILayout.Window(0x4D5053, rect, Draw, "ORTIZ Ops - MissionPresets — пресеты настроек миссии");
             if (editing && selected >= 0 && selected < Store.presets.Count)
             {
                 var er = new Rect(rect.x - 470, rect.y, 460, Mathf.Min(Screen.height - rect.y - 20, 760));

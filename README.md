@@ -1,6 +1,6 @@
 <div align="center">
 
-# ORTIZ Mission Presets
+# ORTIZ Ops - MissionPresets
 
 **Save your favourite mission settings once — apply them to any mission in one click**
 
@@ -40,7 +40,7 @@ Tired of setting starting money, income, AI skill, weather and time of day every
 
 ## How to use
 
-1. Open the mission selection screen. The **ORTIZ Mission Presets** panel appears next to it (**F9** shows / hides it).
+1. Open the mission selection screen. The **ORTIZ Ops - MissionPresets** panel appears next to it (**F9** shows / hides it).
 2. Pick a mission and set everything up in the game's **Customize Mission** window.
 3. Press **Save current mission settings as new preset**.
 4. Next time: pick any mission → **Apply** — or choose the preset in **Apply automatically** with ◄ ►, and it will be applied by itself.
@@ -65,11 +65,11 @@ Presets are stored in `BepInEx/config/MissionPresets/presets.json` — you can b
 
 ## Installation
 
-**Recommended:** install with [Nuclear Option Mod Manager (NOMM)](https://github.com/Combat787/NOMM) — search for **ORTIZ Mission Presets**.
+**Recommended:** install with [Nuclear Option Mod Manager (NOMM)](https://github.com/Combat787/NOMM) — search for **ORTIZ Ops - MissionPresets**.
 
-**Manually:** install [BepInEx 5](https://github.com/BepInEx/BepInEx/releases), download `ORTIZ.MissionPresets.dll` from [Releases](../../releases) and put it in `Nuclear Option/BepInEx/plugins/ORTIZ.MissionPresets/`.
+**Manually:** install [BepInEx 5](https://github.com/BepInEx/BepInEx/releases), download `ORTIZ-Ops-MissionPresets.dll` from [Releases](../../releases) and put it in `Nuclear Option/BepInEx/plugins/ORTIZ-Ops-MissionPresets/`.
 
-> Upgrading from an old build named *MissionPresets*: delete the old `BepInEx/plugins/MissionPresets` folder. Presets and settings are kept.
+> Upgrading from an older build named *MissionPresets* or *ORTIZ.MissionPresets*: delete the old `BepInEx/plugins/MissionPresets` / `BepInEx/plugins/ORTIZ.MissionPresets` folder. Presets and settings are kept.
 
 ## Building from source
 ```
@@ -101,7 +101,7 @@ dotnet build -c Release -p:GameDir="C:\Program Files (x86)\Steam\steamapps\commo
 | **Запреты** *(по желанию)* | Запрещённые самолёты и оружие |
 
 ### Как пользоваться
-1. Открой экран выбора миссии — рядом появится панель **ORTIZ Mission Presets** (**F9** — показать/скрыть).
+1. Открой экран выбора миссии — рядом появится панель **ORTIZ Ops - MissionPresets** (**F9** — показать/скрыть).
 2. Выбери миссию и настрой её в игровом окне **Customize Mission**.
 3. Нажми **«Сохранить текущие настройки миссии как новый пресет»**.
 4. Дальше: выбираешь любую миссию → **«Применить»**, или выбери пресет в **«Применять автоматически»** кнопками ◄ ► — он будет применяться сам.
@@ -109,7 +109,7 @@ dotnet build -c Release -p:GameDir="C:\Program Files (x86)\Steam\steamapps\commo
 Пресеты хранятся в `BepInEx/config/MissionPresets/presets.json` — их можно сохранить или отдать друзьям.
 
 ### Установка
-Через **NOMM** — найди **ORTIZ Mission Presets**. Вручную — положи `ORTIZ.MissionPresets.dll` из [Releases](../../releases) в `BepInEx/plugins/ORTIZ.MissionPresets/`. Если стояла старая версия *MissionPresets* — удали её папку, пресеты сохранятся.
+Через **NOMM** — найди **ORTIZ Ops - MissionPresets**. Вручную — положи `ORTIZ-Ops-MissionPresets.dll` из [Releases](../../releases) в `BepInEx/plugins/ORTIZ-Ops-MissionPresets/`. Если стояла старая версия *MissionPresets* или *ORTIZ.MissionPresets* — удали её папку, пресеты сохранятся.
 
 ---
 
