@@ -23,7 +23,7 @@ namespace MissionPresets
     [BepInPlugin("ortiz.missionpresets", "ORTIZ Ops - MissionPresets", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Version = "1.0.2";
+        public const string Version = "1.1.0";
         internal static ManualLogSource Log;
         internal static Plugin I;
         internal static ConfigEntry<KeyboardShortcut> ToggleKey;
@@ -48,7 +48,9 @@ namespace MissionPresets
             catch
             {
             }
-            ToggleKey = Config.Bind("Управление", "Показать/скрыть панель", new KeyboardShortcut(KeyCode.F9), "Панель пресетов на экране выбора миссии");
+            L.BindLanguage(Config);
+            ToggleKey = L.Bind(Config, "Controls", "Управление", "Show / hide panel", "Показать/скрыть панель", new KeyboardShortcut(KeyCode.F9),
+                "Presets panel on the mission selection screen", "Панель пресетов на экране выбора миссии");
             storePath = Path.Combine(Paths.ConfigPath, "MissionPresets", "presets.json");
             Load();
             try
@@ -117,7 +119,7 @@ namespace MissionPresets
             var m = picker != null ? picker.Mission : null;
             if (m == null)
             {
-                message = "Сначала выбери миссию";
+                message = L.T("Select a mission first", "Сначала выбери миссию");
                 return false;
             }
             try
@@ -135,14 +137,14 @@ namespace MissionPresets
                 catch
                 {
                 }
-                message = $"Пресет «{preset.name}» применён к «{m.Name}»: {what}";
+                message = L.T($"Preset \"{preset.name}\" applied to \"{m.Name}\": {what}", $"Пресет «{preset.name}» применён к «{m.Name}»: {what}");
                 Log.LogInfo(message);
                 return true;
             }
             catch (Exception e)
             {
                 Log.LogError("Apply failed: " + e);
-                message = "Ошибка: " + e.Message;
+                message = L.T("Error: ", "Ошибка: ") + e.Message;
                 return false;
             }
         }

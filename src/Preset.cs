@@ -188,7 +188,7 @@ namespace MissionPresets
     [Serializable]
     public class Preset
     {
-        public string name = "Новый пресет";
+        public string name = "New preset";
         public string capturedFrom = "";
 
         // which parts to apply
@@ -221,12 +221,12 @@ namespace MissionPresets
             if (applyParameters)
             {
                 parameters.ApplyTo(m.missionSettings);
-                report.Add("параметры");
+                report.Add(L.T("parameters", "параметры"));
             }
             if (applyEnvironment)
             {
                 environment.ApplyTo(m.environment);
-                report.Add("окружение");
+                report.Add(L.T("environment", "окружение"));
             }
             if (applyFactions)
             {
@@ -239,7 +239,7 @@ namespace MissionPresets
                         n++;
                     }
                 }
-                report.Add($"фракции ({n})");
+                report.Add(L.T($"factions ({n})", $"фракции ({n})"));
             }
             return string.Join(", ", report);
         }
