@@ -23,7 +23,7 @@ namespace MissionPresets
     [BepInPlugin("ortiz.missionpresets", "ORTIZ Ops - MissionPresets", Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.2";
         internal static ManualLogSource Log;
         internal static Plugin I;
         internal static ConfigEntry<KeyboardShortcut> ToggleKey;
@@ -95,11 +95,11 @@ namespace MissionPresets
             }
         }
 
-        internal static MissionsPicker Picker()
+        internal static MissionPicker Picker()
         {
             try
             {
-                var p = SceneSingleton<MissionsPicker>.i;
+                var p = SceneSingleton<MissionPicker>.i;
                 return p != null && p.isActiveAndEnabled ? p : null;
             }
             catch
@@ -113,7 +113,7 @@ namespace MissionPresets
         internal static bool ApplyToPicker(Preset preset, out string message)
         {
             message = null;
-            var picker = SceneSingleton<MissionsPicker>.i;
+            var picker = SceneSingleton<MissionPicker>.i;
             var m = picker != null ? picker.Mission : null;
             if (m == null)
             {
@@ -149,10 +149,10 @@ namespace MissionPresets
     }
 
     /// <summary>Auto-apply the chosen preset whenever a mission is selected.</summary>
-    [HarmonyPatch(typeof(MissionsPicker), nameof(MissionsPicker.SelectMission))]
-    internal static class MissionsPicker_SelectMission_Patch
+    [HarmonyPatch(typeof(MissionPicker), nameof(MissionPicker.SelectMission))]
+    internal static class MissionPicker_SelectMission_Patch
     {
-        private static void Postfix(MissionsPicker __instance)
+        private static void Postfix(MissionPicker __instance)
         {
             try
             {
