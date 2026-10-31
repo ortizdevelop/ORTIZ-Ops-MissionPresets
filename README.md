@@ -18,7 +18,7 @@
 Tired of setting starting money, income, AI skill, weather and time of day every time you start **Escalation** or **Terminal Control**? Configure a mission once in the game's own **Customize Mission** window, save it as a preset, and apply it to any mission — by hand or automatically every time you pick one.
 
 > [!NOTE]
-> The in-game interface is in **Russian**.
+> The interface is in **English** by default and can be switched to **Russian** — with the *Language* button in the panel or in F1 → *0. Language*.
 
 ## Features
 - 💾 **Save** the current mission settings as a named preset.
@@ -42,7 +42,7 @@ Tired of setting starting money, income, AI skill, weather and time of day every
 
 1. Open the mission selection screen. The **ORTIZ Ops - MissionPresets** panel appears next to it (**F9** shows / hides it).
 2. Pick a mission and set everything up in the game's **Customize Mission** window.
-3. Press **Save current mission settings as new preset**.
+3. Press **Save current mission settings as a new preset**.
 4. Next time: pick any mission → **Apply** — or choose the preset in **Apply automatically** with ◄ ►, and it will be applied by itself.
 
 ### Panel buttons
@@ -54,7 +54,8 @@ Tired of setting starting money, income, AI skill, weather and time of day every
 | **Edit** → **Save** | Change any value of the preset |
 | **Overwrite from current mission** | Replace the preset's values with the current mission's settings |
 | **Rename** / **Delete** | Manage presets |
-| **Save current mission settings as new preset** | Create a new preset |
+| **Save current mission settings as a new preset** | Create a new preset |
+| **Language** | Switch English ⇄ Russian |
 
 ## Settings
 | Setting | Default |
@@ -80,6 +81,9 @@ dotnet build -c Release -p:GameDir="C:\Program Files (x86)\Steam\steamapps\commo
 
 <a id="-русский"></a>
 ## 🇷🇺 Русский
+
+> [!NOTE]
+> По умолчанию интерфейс на **английском**. Включить **русский**: кнопка «Language» на панели или F1 → *0. Language* → *Russian*.
 
 Надоело каждый раз выставлять стартовые деньги, доход, навык ИИ, погоду и время суток перед **Escalation** или **Terminal Control**? Настрой миссию один раз в игровом окне **Customize Mission**, сохрани как пресет и применяй к любой миссии — вручную или автоматически при каждом выборе миссии.
 

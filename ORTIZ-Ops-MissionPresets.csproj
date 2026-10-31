@@ -8,7 +8,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>ORTIZ-Ops-MissionPresets</AssemblyName>
     <RootNamespace>MissionPresets</RootNamespace>
-    <Version>1.0.2</Version>
+    <Version>1.1.0</Version>
     <Authors>ORTIZ</Authors>
     <Product>ORTIZ Ops - MissionPresets</Product>
     <LangVersion>9.0</LangVersion>
